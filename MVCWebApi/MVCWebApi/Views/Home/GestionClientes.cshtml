@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "GestionClientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<h2>GestionClientes</h2>
+<p id="clientes"></p>
+<h2>Buscar clientes</h2>
+@Html.TextBox("IdCliente")
+<input type="button" id="buscarCliente" value="Buscar" />
+<br />
+<h2>Crear clientes</h2>
+@Html.TextBox("NombreCliente")
+@Html.TextBox("Usuario")
+<input type="button" id="crearCliente" value="Crear" />
+<br />
+<h2>Actualizar cliente</h2>
+@Html.TextBox("Id")
+@Html.TextBox("Nombre")
+@Html.TextBox("User")
+<input type="button" id="actualizarCliente" value="Actualizar" />
+<br />
+<h2>Eliminar cliente</h2>
+@Html.TextBox("IdClienteEliminar")
+<input type="button" id="eliminarCliente" value="Eliminar" />
